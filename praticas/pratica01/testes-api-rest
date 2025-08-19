@@ -1,0 +1,502 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v11.4.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 7.96,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/tarefas/3283",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"name": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 19 Aug 2025 23:15:40 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "89"
+						}
+					],
+					"content": {
+						"size": 89,
+						"mimeType": "application/json",
+						"text": "{\n  \"nome\": \"Estudar API REST\",\n  \"prioridade\": 2,\n  \"concluida\": false,\n  \"id\": \"3283\"\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 7.96,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "DELETE /tarefas/{id} – remover"
+			},
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 7.101999999999999,
+				"request": {
+					"method": "PATCH",
+					"url": "http://localhost:3000/tarefas/3283",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n   \"concluida\": false\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"name": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 19 Aug 2025 23:15:20 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "89"
+						}
+					],
+					"content": {
+						"size": 89,
+						"mimeType": "application/json",
+						"text": "{\n  \"nome\": \"Estudar API REST\",\n  \"prioridade\": 2,\n  \"concluida\": false,\n  \"id\": \"3283\"\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 7.101999999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "PATCH /tarefas/{id} – atualizar parcial"
+			},
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 18.889,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/tarefas/3283",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n   \"nome\": \"Estudar API REST\",\n   \"prioridade\": 2,\n   \"concluida\": true\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"name": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 19 Aug 2025 23:14:40 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "88"
+						}
+					],
+					"content": {
+						"size": 88,
+						"mimeType": "application/json",
+						"text": "{\n  \"nome\": \"Estudar API REST\",\n  \"prioridade\": 2,\n  \"concluida\": true,\n  \"id\": \"3283\"\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.889,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "PUT /tarefas/{id} – atualizar"
+			},
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 0,
+				"request": {
+					"method": "GET",
+					"url": "%22http://localhost:3000/tarefas/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 0,
+					"statusText": "Error",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET /tarefas/1 – não encontrado"
+			},
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 4.153,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/tarefas/3283",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": ""
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"name": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 19 Aug 2025 23:13:46 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "89"
+						}
+					],
+					"content": {
+						"size": 89,
+						"mimeType": "application/json",
+						"text": "{\n  \"id\": \"3283\",\n  \"nome\": \"Estudar API REST\",\n  \"prioridade\": 1,\n  \"concluida\": false\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 4.153,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "GET /tarefas/{id} – por id"
+			},
+			{
+				"startedDateTime": "2025-08-19T23:18:46.416Z",
+				"time": 8.241,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/tarefas",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "User-Agent",
+							"value": "insomnia/11.4.0"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n   \"nome\": \"Estudar API REST\",\n   \"prioridade\": 1,\n   \"concluida\": false\n}\n"
+					},
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "tinyhttp"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Access-Control-Allow-Methods",
+							"value": "GET, HEAD, PUT, PATCH, POST, DELETE"
+						},
+						{
+							"name": "Access-Control-Allow-Headers",
+							"value": "content-type"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 19 Aug 2025 23:13:13 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"name": "Content-Length",
+							"value": "89"
+						}
+					],
+					"content": {
+						"size": 89,
+						"mimeType": "application/json",
+						"text": "{\n  \"id\": \"3283\",\n  \"nome\": \"Estudar API REST\",\n  \"prioridade\": 1,\n  \"concluida\": false\n}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 8.241,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "POST /tarefas – criar"
+			}
+		]
+	}
+}
