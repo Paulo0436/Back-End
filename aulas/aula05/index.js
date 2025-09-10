@@ -1,8 +1,21 @@
 // importa o framwork
 const express = require("express");
 
+//irmporta middleware de terceiros
+const cors = require ('cors');
+
+//importa middleware de tora
+const router = require('./routerTarefa');
+
 //cria uma instancia da aplicação
 const app = express();
+
+//middleware embutido ou integrado
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));//?param1=valor&param2=valor2
+
+//middleware de terceiros
+app.use(cors());
 
 //middleware de aplicação
 app.use((req,res,next) => {
@@ -10,26 +23,12 @@ app.use((req,res,next) => {
     next();
 });
 
+
+
+
+
+
 //middleware de rota
-const router = express.Router();
-router.get("/", (req,res) => {
-    res.send("Chegou aqui")
-})
-
-
-router.post("/",(req,res) => {
-    res.status(201).send("Inserido com sucesso")
-})
-
-router.get("/:id", (req , res) => {
-    const { id } = req.params;
-    if(id== 1) return  res.send("Achei")
-        throw Error ("Não achei")
-})
-
-
-
-
 app.use('/tarefas',router);
 
 //middleware de erro
