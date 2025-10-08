@@ -1,0 +1,18 @@
+db.usuarios.find({},{_id:0,nome:1,email:1})
+db.usuarios.find({}),{_id:0,nome:1,email:1})
+db.usuarios.find({})
+db.usuarios.deleteOne({nome:"Pad"})
+db.usuarios.find({})
+db.usuarios.deleteOne({nome:"Maria"})
+db.usuarios.updateOne({nome:"Pades"},{$set:{telefone:"8888888888"}})
+db.usuarios.find({nome:"Pades"})
+db.usuarios.find({nome:"Pades})
+db.usuarios.find({})
+db.usuarios.insertOne({nome:"Pad",email:"pads@iebs.br ", telefone:999999999})
+db.usuarios.find({})
+show collections
+db.usuarios.insertOne({nome:"Pades",email:"pades@iebs.br"})
+show collections
+use meubanco
+use local
+show dbs
